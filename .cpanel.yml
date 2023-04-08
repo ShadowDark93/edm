@@ -1,0 +1,7 @@
+##### THIS ALLOWS US TO DEPLOY THE SITE FROM A GIT REPO ######
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sites/17b/a/aeaa364cf0/public_html/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
